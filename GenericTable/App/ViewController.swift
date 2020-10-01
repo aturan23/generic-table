@@ -10,13 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let users = [User(name: "John Doe"), User(name: "Jane Roe")]
+    let users = [User(name: "John Doe", image: "waiting"), User(name: "Jane Roe", image: "waiting")]
     let employees = [Employee(name: "Richard Roe", position: "iOS dev."), Employee(name: "Jane Doe", position: "Android dev.")]
     
+    lazy var strSection = SectionBuilder<String, StrCell>(items: ["Some", "String", "Text"])
     lazy var userSection = SectionBuilder<User, UserCell>(items: users)
     lazy var employeeSection = SectionBuilder<Employee, EmployeeCell>(items: employees)
     
-    lazy var adapter = TableAdapter(list: [userSection, employeeSection])
+    lazy var adapter = TableAdapter(list: [strSection, employeeSection, userSection])
 //    lazy var adapter = TableAdapter()
 
     lazy var tableView: UITableView = {

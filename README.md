@@ -29,7 +29,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(tableView)
         tableView.setAdapter(adapter)
 
         /// For get select action on Section
@@ -56,3 +55,4 @@ class ViewController: UIViewController {
     }
 }
 ```
+![Screenshot](demo.png)

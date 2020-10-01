@@ -21,6 +21,7 @@
 		4FBBC4382525B56C006A4239 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBBC4372525B56C006A4239 /* UserCell.swift */; };
 		4FBBC43B2525B58A006A4239 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBBC43A2525B58A006A4239 /* User.swift */; };
 		4FBBC43D2525B596006A4239 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBBC43C2525B596006A4239 /* Employee.swift */; };
+		4FBBC4432525DFFD006A4239 /* StrCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBBC4422525DFFD006A4239 /* StrCell.swift */; };
 		D843AD3A09BCCBC1FBE27CEE /* Pods_GenericTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAA14F2A0A865970712A48B /* Pods_GenericTable.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		4FBBC4372525B56C006A4239 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		4FBBC43A2525B58A006A4239 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4FBBC43C2525B596006A4239 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		4FBBC4422525DFFD006A4239 /* StrCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrCell.swift; sourceTree = "<group>"; };
 		A4AD6C27253965435904D1EC /* Pods-GenericTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericTable.release.xcconfig"; path = "Target Support Files/Pods-GenericTable/Pods-GenericTable.release.xcconfig"; sourceTree = "<group>"; };
 		BEAA14F2A0A865970712A48B /* Pods_GenericTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenericTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67DD963F435ACB90CBCF240 /* Pods-GenericTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericTable.debug.xcconfig"; path = "Target Support Files/Pods-GenericTable/Pods-GenericTable.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				4FBBC4352525B552006A4239 /* EmployeeCell.swift */,
 				4FBBC4372525B56C006A4239 /* UserCell.swift */,
+				4FBBC4422525DFFD006A4239 /* StrCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				4FBBC43D2525B596006A4239 /* Employee.swift in Sources */,
 				4FBBC4332525B01E006A4239 /* ConfigurableCell.swift in Sources */,
 				4FBBC4312525AFD9006A4239 /* SectionBuilder.swift in Sources */,
+				4FBBC4432525DFFD006A4239 /* StrCell.swift in Sources */,
 				4F4D29C925243F4200AC97CC /* SceneDelegate.swift in Sources */,
 				4FBBC41C252487EB006A4239 /* Extensions.swift in Sources */,
 			);

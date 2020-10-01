@@ -10,4 +10,5 @@ import Foundation
 
 struct User {
     let name: String
+    let image: String
 }

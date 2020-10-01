@@ -55,4 +55,5 @@ class ViewController: UIViewController {
     }
 }
 ```
-![Screenshot](demo.png =370x800)
+<img src="demo.png" width="370">
+

@@ -55,4 +55,4 @@ class ViewController: UIViewController {
     }
 }
 ```
-![Screenshot](demo.png)
+![Screenshot](demo.png =370x800)

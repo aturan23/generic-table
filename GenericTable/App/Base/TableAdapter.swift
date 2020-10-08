@@ -11,7 +11,6 @@ import UIKit
 class TableAdapter: NSObject {
     var sectionList: [Section] = []
 
-    override init() {}
     init(list: [Section]) {
         sectionList = list
     }

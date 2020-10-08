@@ -15,11 +15,10 @@ protocol Section {
 }
 
 class SectionBuilder<Item, Cell: ConfigurableCell>: Section where Cell.Item == Item {
-    typealias CellClosure = (Item) -> ()
-
+    
     private let items: [Item]
     private lazy var cells: [Cell] = self.createCells()
-    var didSelected: CellClosure? = nil
+    var didSelected: ((Item) -> ())?
 
     var count: Int {
         items.count
@@ -34,15 +33,15 @@ class SectionBuilder<Item, Cell: ConfigurableCell>: Section where Cell.Item == I
     }
 
     func didSelect(at index: Int) {
-        let m = items[index]
-        didSelected?(m)
+        let item = items[index]
+        didSelected?(item)
     }
 
     func createCells() -> [Cell] {
-        return items.map { m in
-            let c = Cell()
-            c.configure(with: m)
-            return c
+        return items.map { item in
+            let cell = Cell()
+            cell.configure(with: item)
+            return cell
         }
     }
 }

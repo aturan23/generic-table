@@ -14,10 +14,10 @@ protocol Section {
     func didSelect(at index: Int)
 }
 
-class SectionBuilder<Model, Cell>: Section where Cell: ConfigurableCell, Cell.Model == Model {
-    typealias CellClosure = (Model) -> ()
+class SectionBuilder<Item, Cell>: Section where Cell: ConfigurableCell, Cell.Item == Item {
+    typealias CellClosure = (Item) -> ()
 
-    private let items: [Model]
+    private let items: [Item]
     private lazy var cells: [Cell] = self.createCells()
     var didSelected: CellClosure? = nil
 
@@ -25,7 +25,7 @@ class SectionBuilder<Model, Cell>: Section where Cell: ConfigurableCell, Cell.Mo
         items.count
     }
 
-    init(items: [Model]) {
+    init(items: [Item]) {
         self.items = items
     }
 

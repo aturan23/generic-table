@@ -11,7 +11,7 @@ import UIKit
 typealias ConfigurableCell = UITableViewCell & Configurable
 
 protocol Configurable {
-    associatedtype Model
+    associatedtype Item
     
-    func configure(with _: Model)
+    func configure(with _: Item)
 }

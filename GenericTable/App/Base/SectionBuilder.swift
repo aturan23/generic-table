@@ -14,7 +14,7 @@ protocol Section {
     func didSelect(at index: Int)
 }
 
-class SectionBuilder<Item, Cell>: Section where Cell: ConfigurableCell, Cell.Item == Item {
+class SectionBuilder<Item, Cell: ConfigurableCell>: Section where Cell.Item == Item {
     typealias CellClosure = (Item) -> ()
 
     private let items: [Item]

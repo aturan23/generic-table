@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     lazy var userSection = SectionBuilder<User, UserCell>(items: users)
     
-    lazy var adapter = TableAdapter(list: [userSection)
+    lazy var adapter = TableAdapter(list: [userSection])
 
     ...
 

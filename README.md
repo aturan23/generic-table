@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     let users = [User(name: "John Doe"), User(name: "Jane Roe")]
     
-    lazy var userSection = SectionBuilder<User, UserCell>(items: users)
+    lazy var userSection = GenericSection<User, UserCell>(items: users)
     
     lazy var adapter = TableAdapter(list: [userSection])
 

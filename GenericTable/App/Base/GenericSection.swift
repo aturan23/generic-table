@@ -1,5 +1,5 @@
 //
-//  SectionBuilder.swift
+//  GenericSection.swift
 //  GenericTable
 //
 //  Created by Turan Assylkhan on 10/1/20.
@@ -14,7 +14,7 @@ protocol Section {
     func didSelect(at index: Int)
 }
 
-class SectionBuilder<Item, Cell: ConfigurableCell>: Section where Cell.Item == Item {
+class GenericSection<Item, Cell: ConfigurableCell>: Section where Cell.Item == Item {
     
     private let items: [Item]
     private lazy var cells: [Cell] = self.createCells()

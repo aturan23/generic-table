@@ -14,7 +14,7 @@ protocol Section {
     func didSelect(at index: Int)
 }
 
-class GenericSection<Item, Cell: ConfigurableCell>: Section where Cell.Item == Item {
+class GenericSection<Item, Cell>: Section where Cell: ConfigurableCell, Cell.Item == Item {
     
     private let items: [Item]
     private lazy var cells: [Cell] = self.createCells()
